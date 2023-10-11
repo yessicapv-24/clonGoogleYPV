@@ -1,0 +1,248 @@
+
+body {
+    margin:0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+/*************************************************
+****************************************************
+*************************************************/
+/* Navegación */
+header {
+    /* width - ancho /// height-alto */
+    width: 100%;
+    height: 60px;
+}
+
+/* Acceder a nav a través de header */
+header nav {
+    display: flex;
+    /* Justificar hacia la derecha */
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section {
+    /* width - ancho /// height-alto y el valor auto = altura automática*/
+    width: 250px;
+    height: auto;
+    /* Eliminar puntitos */
+    list-style:none;
+    display: flex;
+    /* Justificar al centro // de acorde al elemento */
+    justify-content: center;
+    /* Centrando verticalmente*/
+    align-items:center;
+}
+
+a {
+    text-decoration: none;
+}
+/* Anclas dentro del nav para agregar espacio */
+nav .nav-right-section a{
+    /* Color del texto */
+    color: rgba(0,0,0,.87);
+    margin-right: 20px;
+}
+/* Ícono del Menú */
+nav .nav-right-section .menu{
+    /* Ponemos imagen / vector */
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+    /* Que la imagen esté contenida en el elemento más grande */
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+
+/* Imagen del usuarix */
+nav .nav-right-section img{
+    /* Redondeado de bordes */
+    border-radius: 100%;
+    width: 35px;
+    margin-left: 20px
+}
+
+/*************************************************
+****************************************************
+*************************************************/
+/* Main */
+
+main {
+    margin-top: 150px;
+    /* Centrar elementos */
+    text-align: center;
+}
+
+main .main-logo{
+    width: 530px;
+    margin-bottom: 40px;
+    /* Vertical // Horizontal */
+    /* Centrado absoluto gracias a los márgnes automáticos */
+    margin: 0 auto;
+}
+
+main .main-logo img {
+    height: 120px;
+}
+
+main .main-input {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+main .main-input-container {
+    width: 525px;
+    border: 1px solid #dfe1e5;
+    border-radius: 20px;
+    margin-top: 10% ;
+}
+
+main .main-input input {
+    height: 35px;
+    border: none;
+    /* outline - quitar contorno al accionar click */
+    outline: none;
+    width: 450px;
+}
+/* Efecto hover (sombra) al poner el mouse sin accionar */
+main .main-input-container:hover {
+    border-color: #dfe1e500;
+    /*  0 -> desplazamiento horizontal //
+        1px -> desplazamiento vertical //
+        6px -> desenfoque //
+        0 -> expansión de la sombra    */
+    box-shadow: 0 1px 6px 0 #20212447;
+}
+
+main .main-input .search-icon {
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-size: contain;
+    background-position: center;
+    /* Propiedad para que no se repita */
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+    padding-left: 15px;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+main .main-input .micro-icon{
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png);
+    width: 14px;
+    height: 14px;
+    padding-left: 10px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: -35px;
+}
+
+main .main-input .cam-icon {
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 16px;
+    height: 16px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 6%;
+    margin-left: 5px;
+
+}
+
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+main .main-buttons div {
+    /* inline // inline block los pone en una sola linea */
+    display: inline-block;
+}
+main .main-buttons button {
+    border:0;
+    height: 36px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+    padding: 0 15px;
+    margin-right: 15px;
+    border: 1px solid #f8f9fa;
+    margin-top: 2%;
+}
+
+main .main-buttons button:hover{
+    box-shadow: 0 1px 1px 0 #20212447;
+    border: 1px solid #dadce0;
+    color:#202124;
+}
+.mexico{
+    color: #909497; 
+    background-color: #D0D3D4;
+    display: flex;
+    border-bottom: 0.5px solid #909497;
+    width: 100%;
+    margin-top: 10px;
+}
+.listas{
+    display: flex;
+    width: 100%;
+}
+/*************************************************
+****************************************************
+*************************************************/
+/* FOOTER */
+/* FOOTER */
+footer {
+    height: 90px !important;
+    width: 100%;
+    background-color: #D0D3D4;
+    display: flex; /* Hacer que el footer sea un contenedor flexible */
+    justify-content: space-between; /* Distribuir los elementos en los extremos */
+    align-items: center; /* Centrar verticalmente los elementos */
+    margin-top: 13.8%;
+    color: #909497;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+/* Estilos para la primera lista */
+.ol-footer-one {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.1%;
+    margin-bottom: 0.5%;
+}
+
+.ol-footer-one li {
+    display: inline; /* Mostrar elementos de la lista en línea (uno al lado del otro) */
+    margin-right: 20px; /* Espacio entre elementos de la lista */
+    font-size: medium;
+    color: #797D7F !important;
+}
+
+/* Estilos para la segunda lista */
+.ol-footer-two {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 0.1%;
+    margin-bottom: 0.5%;
+    margin-left: auto;
+}
+
+.ol-footer-two li {
+    display: inline; /* Mostrar elementos de la lista en línea (uno al lado del otro) */
+    margin-right: 20px; /* Espacio entre elementos de la lista */
+    font-size: medium;
+    color: #797D7F !important;
+}
+
+a{
+    color: #797D7F !important;
+    font-size: medium;
+}
